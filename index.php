@@ -45,14 +45,14 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUN
 
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
-
-?> */
+ */
+?>
     <form action="" method="post" enctype="multipart/form-data">
         <Input type="file" name="file">
         <input type="submit" name="simpan">
     </form>
 
-/*    <?php
+    <?php/*
     if(isset($_POST['simpan'])){
 
 $fileToUpload_ = ($_FILES['file']['name']);
