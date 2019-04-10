@@ -43,10 +43,10 @@ use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
-
+/*
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
-
+*/
 ?> 
 form111
 <form action="" method="post" enctype="multipart/form-data">
