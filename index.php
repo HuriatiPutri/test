@@ -30,11 +30,12 @@
 #  - Blob Service PHP API - https://github.com/Azure/azure-storage-php
 #  - Storage Emulator - http://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/ 
 #
+**/
 
 
 require_once 'vendor/autoload.php';
 require_once "./random_string.php";
-
+/*
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
 use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
@@ -47,7 +48,7 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUN
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 **/
 ?> 
-form
+form1
 <form action="" method="post" enctype="multipart/form-data">
         <Input type="file" name="file">
         <input type="submit" name="simpan">
