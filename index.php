@@ -47,7 +47,7 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUN
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 **/
 ?> 
-
+form
 <form action="" method="post" enctype="multipart/form-data">
         <Input type="file" name="file">
         <input type="submit" name="simpan">
