@@ -32,7 +32,7 @@
 #
 **/
 
-require_once 'vendor/autoload.php';
+/*require_once 'vendor/autoload.php';
 require_once "./random_string.php";
 
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
@@ -46,13 +46,13 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUN
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
-?>
+?> */
     <form action="" method="post" enctype="multipart/form-data">
         <Input type="file" name="file">
         <input type="submit" name="simpan">
     </form>
 
-    <?php
+/*    <?php
     if(isset($_POST['simpan'])){
 
 $fileToUpload_ = ($_FILES['file']['name']);
@@ -127,7 +127,7 @@ if (!isset($_GET["Cleanup"])) {
         $blob = $blobClient->getBlob($containerName, $fileToUpload);
         fpassthru($blob->getContentStream());
         echo "<br />";
-*/
+
         
         
     }
@@ -149,6 +149,6 @@ if (!isset($_GET["Cleanup"])) {
     }
 } 
 }
-?>
+?>*/
 
 
