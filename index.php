@@ -43,10 +43,10 @@ use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=huriatiwebapp;AccountKey=+hzjvXoLPfliFd+ZxGNvHh+leZMYRWUHlkjjqWhOJvKQODL61Z3hTuEqz/rNeAYek7YPoFn3UgGh2fKlQRJGvA==;EndpointSuffix=core.windows.net";
-/*
+
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
-*/
+
 ?> 
 form111
 <form action="" method="post" enctype="multipart/form-data">
