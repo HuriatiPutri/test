@@ -52,7 +52,7 @@ $blobClient = BlobRestProxy::createBlobService($connectionString);
 
     <?php
 
-$fileToUpload_ = "https://huriatiapp.azurewebsites.net/tujuh.jpg";
+$fileToUpload_ = "tujuh.jpg";
 //echo $fileToUpload;
 
 if (!isset($_GET["Cleanup"])) {
@@ -111,7 +111,7 @@ if (!isset($_GET["Cleanup"])) {
             foreach ($result->getBlobs() as $blob)
             {
                 echo $blob->getName().": ".$blob->getUrl()."<br />";
-                echo "image : <img src=". $blob->getUrl()."/>";
+                echo "image : <img src='https://huriatiapp.azurewebsites.net/tujuh.jpg'>";
             }
         
             $listBlobsOptions->setContinuationToken($result->getContinuationToken());
