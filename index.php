@@ -111,7 +111,7 @@ if (!isset($_GET["Cleanup"])) {
             foreach ($result->getBlobs() as $blob)
             {
                 echo $blob->getName().": ".$blob->getUrl()."<br />";
-                echo "image : <img src='https://huriatiapp.azurewebsites.net/tujuh.jpg'>";
+                echo "image : <img src='tujuh.jpg'>";
             }
         
             $listBlobsOptions->setContinuationToken($result->getContinuationToken());
@@ -176,7 +176,7 @@ if (!isset($_GET["Cleanup"])) {
         };
  
         // Display the image.
-        var sourceImageUrl = "https://huriatiapp.azurewebsites.net/tujuh.jpg";
+        var sourceImageUrl = "tujuh.jpg";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         // Make the REST API call.
