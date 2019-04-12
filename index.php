@@ -48,7 +48,6 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=huriatiwebapp;Ac
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
 ?>
-    <button onclick="processImage()">Analyze image</button>
 
     <?php
 
@@ -111,7 +110,6 @@ if (!isset($_GET["Cleanup"])) {
             foreach ($result->getBlobs() as $blob)
             {
                 echo $blob->getName().": ".$blob->getUrl()."<br />";
-                echo "image : <img src='tujuh.jpg'>";
             }
         
             $listBlobsOptions->setContinuationToken($result->getContinuationToken());
@@ -213,6 +211,7 @@ if (!isset($_GET["Cleanup"])) {
 </script>
 
 
+    <button onclick="processImage()">Tampilkan dan Analize gambar</button>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
         Response:
