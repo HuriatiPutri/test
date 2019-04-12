@@ -51,7 +51,7 @@ $blobClient = BlobRestProxy::createBlobService($connectionString);
 
     <?php
 
-$fileToUpload_ = "tujuh.jpg";
+$fileToUpload_ = "delapan.jpg";
 //echo $fileToUpload;
 
 if (!isset($_GET["Cleanup"])) {
