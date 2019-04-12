@@ -174,7 +174,7 @@ if (!isset($_GET["Cleanup"])) {
         };
  
         // Display the image.
-        var sourceImageUrl = "https://huriatiapp.azurewebsites.net/tujuh.jpg";
+        var sourceImageUrl = "https://huriatiwebapp.blob.core.windows.net/blob/delapan.jpg";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         // Make the REST API call.
